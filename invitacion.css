@@ -1,0 +1,644 @@
+@font-face {
+    font-family: 'Marck Script';
+    src: url('fonts/Marck_Script/MarckScript-Regular.ttf') format('truetype'); /* O usa .woff si es el formato */
+}
+
+@font-face {
+    font-family: 'Montserrat Alternates';
+    src: url('fonts/Montserrat_Alternates/MontserratAlternates-Regular.ttf') format('truetype'); /* O usa .woff si es el formato */
+}
+
+@font-face {
+    font-family: 'Liu Jian Mao Cao';
+    src: url('fonts/Liu_Jian_Mao_Cao/LiuJianMaoCao-Regular.ttf') format('truetype'); /* O usa .woff si es el formato */
+}
+@font-face {
+    font-family: 'Questrial';
+    src: url('fonts/Questrial/Questrial-Regular.ttf') format('truetype'); /* O usa .woff si es el formato */
+}
+@font-face {
+    font-family: 'Rosarivo';
+    src: url('fonts/Rosarivo/Rosarivo-Regular.ttf') format('truetype'); /* O usa .woff si es el formato */
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+    
+}
+body{
+    background-color: rgb(27, 27, 27);
+    width: 100vw;
+    overflow-x: hidden;
+    background: linear-gradient(#202020, #272727);
+    font-family: "Marck Script";
+    height:100vh; 
+    display: flex;
+    justify-content: space-between;
+}
+
+.centro{
+    margin-left: 38%;
+    margin-right: 38%;
+    overflow-x: hidden;
+}
+
+/* Ancho de pantalla mayor a 1100px */
+@media screen and (max-width: 1700px) {
+    .centro {
+        margin-left: 35%;
+        margin-right: 35%;
+    }
+}
+@media screen and (max-width: 1400px) {
+    .centro {
+        margin-left: 33%;
+        margin-right: 33%;
+    }
+}
+@media screen and (max-width: 1250px) {
+    .centro {
+        margin-left: 30%;
+        margin-right: 30%;
+    }
+}
+
+/* Ancho de pantalla mayor a 1000px */
+@media screen and (max-width: 1170px) {
+    .centro {
+        margin-left: 28%;
+        margin-right: 28%;
+    }
+}
+
+/* Ancho de pantalla mayor a 900px */
+@media screen and (max-width: 1000px) {
+    .centro {
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+}
+
+/* Ancho de pantalla mayor a 1200px */
+/* @media screen and (min-width: 1200px) {
+    .centro {
+        margin-left: 40%;
+        margin-right: 30%;
+    }
+} */
+
+/* Ancho de pantalla mayor a 1300px */
+/* @media screen and (min-width: 1300px) {
+    .centro {
+        margin-left: 35%;
+        margin-right: 35%;
+    }
+} */
+@media screen and (max-width: 850px) {
+    .centro {
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+}
+@media screen and (max-width: 700px) {
+    .centro {
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+}
+@media screen and (max-width: 600px) {
+    .centro {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}
+@media screen and (max-width: 520px) {
+    .centro {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+/* Para pantallas móviles (menores a 768px) */
+@media screen and (max-width: 460px) {
+    .centro {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+
+html{
+    width: 100vw;
+    overflow-x: hidden;
+}
+.inicio {
+    position: relative;
+    width: 100%; /* Ajusta según el tamaño de las imágenes */
+    height: 150px; /* Ajusta según el tamaño de las imágenes */
+  }
+
+.flortop1, .flortop2{
+    position: absolute;
+    top: 0;
+    width: 150px;
+    height: auto;
+}
+.flortop3{
+    position: absolute;
+    top: -40px;
+    left: -40px;
+    width: 120px;
+    height: auto;
+
+}
+.flortop4{
+    position: absolute;
+    top: -20px;
+    right: -60px;
+    width: 150px;
+    height: auto;
+    z-index: -1;
+    opacity: 0.7;
+
+}
+
+.flortop1{
+    left: 0;
+    transform: rotate(130deg);
+    margin-top: -150px;
+    margin-left: -80px;
+    opacity: 0.7;
+
+}
+.flortop2{
+    right: 0;
+    transform: rotate(-130deg);
+    margin-top: -175px;
+    margin-right: -60px;
+    z-index: -2;
+    opacity: 0.5;
+}
+
+.statics1{
+    position: relative;
+    width: 100%; /* Ancho del contenedor */
+    height: 120px; /* Alto del contenedor */
+    text-align: center;
+
+}
+.cont1 p{
+    letter-spacing: 1px;
+}
+
+.rosas{
+    margin-left: -60px;
+    display: flex;
+    flex-direction: column;
+}
+.flor1,.flor2,.flor3,.flor4{
+    position: absolute;
+    opacity: 0.8;  
+}
+.flor1{
+    width: 180px;
+    height: 149px;
+    z-index: 1;
+    top: -50px;
+    left: -45px;
+}
+.flor3{
+    width: 90px;
+    height: 79px;
+    z-index: 3;
+    top: 45px;
+    left: 35px;
+}
+.flor4{
+    width: 108px;
+    height: 90px;
+    z-index: 2;
+    top: 70px;
+    left: -35px;
+
+}
+
+.flor2{
+    width: 150px;
+    height: 223px;
+    z-index: 1;
+    transform: rotate(-118deg);
+    margin-right: -40px;
+    top: -120px;
+    right: -40px;
+}
+
+.bi-circle-fill{
+    margin-left: 2.5px;
+    margin-right: 2.5px;
+    font-size: 8px;
+}
+.bi-circle-fill:hover{
+    color: #D90F0Fca !important;
+}
+#c2{
+    /* background-color: #D9D9D9 !important; */
+    color: #D90F0F ;
+}
+#c1, #c3{
+    color: #d9d9d937;
+}
+.texto1,.texto2{
+    font-family: 'Marck Script';
+    font-size: 56px;
+    letter-spacing: -2px;
+}
+
+.texto1{
+    position: absolute;
+    top: 10px;
+    left: 33%;
+    
+    
+}
+.texto2{
+    position: absolute;
+    top: 56px;
+    left: 38%;
+}
+.texto2 hr{
+    width: 80%;
+}
+
+.texto3{
+    /* position: absolute; */
+    /* top: 30px; */
+    /* left: 35%; */
+    margin-top: 50px;
+    margin-left: 30px;
+    text-align: center;
+    line-height: 5px;
+    font-family: 'Montserrat Alternates', sans-serif; /* Aplica la fuente Montserrat Alternates */
+    font-weight: 600; /* Aplica el peso bold a la fuente */
+
+
+}
+.texto3 h1{
+    font-size: 64px;
+    font-family: 'Liu Jian Mao Cao';
+    line-height: 30px;
+}
+.nombrelugar{
+    font-family: 'Montserrat Alternates', sans-serif; /* Aplica la fuente Montserrat Alternates */
+    font-weight: bold;
+    font-size: 16px;
+
+}
+.tela1{
+    position: absolute;
+}
+.lugar{
+    position: relative;
+    width: 100%;
+    height: 275px;
+    font-family: 'Montserrat Alternates';
+    box-shadow: inset 0px -10px 10px rgba(0, 0, 0, 0.5); /* Sombra interna */
+}
+
+.tela1{
+    position: absolute;
+    top: -100px;
+    right: -110px;
+    z-index: 1;
+    opacity: 0.25;
+}
+
+.content1{
+    display: flex;
+    margin-top: 30px;
+    height: 200px;
+}
+.cont1{
+    flex: 1.2;
+    text-align: center;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Montserrat Alternates', sans-serif; /* Aplica la fuente Montserrat Alternates */
+    font-weight: 300;
+    font-size: 13px;
+    z-index: 1;
+}
+.cont2{
+    flex: 0.8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+
+.cont1 p,.cont1 h1,.cont1 h4{
+    margin-bottom: 0;
+    line-height: 18px;
+}
+.cont1 h1{
+    font-family: 'Liu Jian Mao Cao';
+    font-size: 46px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+.cont2 img{
+    width: 80px;
+    height: 107px;
+}
+.cont2 .img1{
+    position: absolute;    
+    /* transform: rotate(-98deg); */
+    top: 40px;
+    right: 75px;
+    width: 120px;
+    height: auto;
+}
+.cont2 .img2{
+    position: absolute;
+    z-index: 1;
+    /* transform:rotate(10deg) ; */
+    height: 120px;
+    width: auto;
+}
+.florlugar{
+    position: absolute;
+    z-index: 3;
+    bottom: 0px;
+    right: 0px;
+    width: 100px;
+    height: 109px ;
+}
+
+.pielugar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+.ubi{
+    text-align: center;
+    line-height: 6px;
+    font-size: 13px;
+}
+.ubi a{
+    color: rgb(200, 199, 199);
+}
+.sobre{
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+.florpie1,.florpie2{
+    position: absolute;
+
+}
+.florpie1{
+    width: 130px;
+    height: 115.5px;
+    z-index: 3;
+    top: -40px;
+    left: -25px;
+}
+.florpie2{
+    width: 150px;
+    height: 223px;
+    transform: rotate(-5deg);
+    left: -40px;
+    top: -10px;
+    z-index: 2;
+}
+
+.cartaimg{
+    width: 100%;
+    height: auto;
+    margin-top: -73px;
+    margin-bottom: -73px;
+    z-index: 1;
+}
+.selloimg{
+    position: absolute;
+    z-index: 5;
+    width: 20%;
+    height: auto;
+    margin-left: 5%;
+    
+}
+.carta{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #191919;
+}
+.carta h1{
+    position: absolute;
+    color: black;
+    top: 20px;
+    margin-left: 10px;
+    z-index: 2;
+}
+.telasobre1, .telasobre2, .telasobre3, .telasobre4, .flortela1, .flortela2{
+    position: absolute;
+    top: 0;
+    z-index: 0;
+}
+.telasobre1{
+    width: 200px;
+    height: auto;
+    top: -50px;
+    left: -50px;
+    filter: brightness(0.5);
+}
+.telasobre2{
+    width: 200px;
+    height: auto;
+    top: -5px;
+    right: 0;
+    filter: brightness(0.5);
+}
+.telasobre3{
+    width: 240px;
+    height: auto;
+    top: -150px;
+    right: 0px;
+}
+.telasobre4{
+    width: 300px;
+    height: auto;
+    top: -40px;
+    left: -40px;
+}
+.flortela1{
+    width: 100px;
+    height: auto;
+    transform: rotate(-60deg);
+    top: -60px;
+    right: -40px;
+    z-index: 1;
+}
+.flortela2{
+    width: 180px;
+    height: auto;
+    transform: rotate(-100deg);
+    top: -140px;
+    right: -170px;
+    z-index: 1;
+}
+
+.piefotos .img1{
+    width: 125px;
+    height: auto;
+    z-index: 1;
+}
+.piefotos  .img2{
+    width: 125px;
+    height: auto;
+}
+.piefotos  .img3{
+    width: 84px;
+    height: auto;
+    z-index: 1;
+    margin-bottom: -40px;
+    margin-right: 20px;
+}
+.piefotos  .img4{
+    width: 84px;
+    height: auto;
+    margin-bottom: -35px;
+    margin-right: 20px;
+}
+
+.fotos1, .fotos2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+.fotos1{
+    display: relative;
+}
+.florfotopie{
+    position: absolute;
+    width: 80px;
+    height: auto;
+    bottom: 0;
+    left: 80px;
+    z-index: 2;
+}
+.fotos2{
+    margin-left: -50px;
+}
+.piefotos{
+    display: flex;
+    justify-content: space-between;
+    background-color: #191919;
+    font-family: "Marck Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+    padding-top: 75px;
+    position: relative;
+}
+
+.fotocenter{
+    font-size: 28px !important;
+    line-height: 30px;
+    margin-top: 20px;
+    margin-right: 40px;
+}
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #191919;
+}
+.footer hr{
+    width: 80%;
+}
+.footer h2{
+    font-family: Questrial;
+    font-size: 14px;
+    opacity: 0.6;
+    margin-top: -8px;
+    margin-bottom: 10px;
+}
+.modalform {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 20;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.modal-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #191919;
+    opacity: 0.5;
+    z-index: -1; /* Para que el fondo quede detrás del formulario */
+}
+.form{
+    background-color: #D9D9D9;
+    
+}
+.contenedor{
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    color: black;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.contenedor *{
+    color: black;
+}
+.contenedor h1{
+    text-decoration: underline;
+}
+.contenedor label{
+    font-family: Rosarivo;
+    width: 100%;
+}
+.contenedor label input{
+    background-color: transparent; /* Fondo transparente */
+    border: none; /* Sin borde */
+    border-bottom: 0.5px solid black; /* Línea inferior visible */
+    color: black; /* Color del texto */
+    padding: 5px;
+    height: 16px;
+    width: auto;
+}
+.contenedor span{
+    font-family: Rosarivo;
+    font-size: 13px;
+    margin-top: 10px;
+    color: #D90F0F;
+}
+.contenedor input{
+    width: 40%;
+    border-bottom: 0.3px solid black !important;
+    background: none;
+    margin-top: 10px;
+
+}
+.selloimg:hover{
+    cursor: pointer;
+}

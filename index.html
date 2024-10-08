@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="invitacion.css">
+    <title>Estas invitado</title>
+</head>
+<body>
+    <div class="contenedor-principal">
+
+        <div class="column">
+        </div>
+        <div class="centro">
+            <div class="modalform" id="modalinvitacion">
+                <div class="modal-background" onclick="cerrarmodal()"></div> <!-- Fondo separado -->
+                <div class="form">
+                    <form class="contenedor" id="form">
+                        <h1>Confirmá tu asistencia</h1>
+                        <label for="nombre">
+                            Nombre y Apellido: <input type="text" name="nombre" id="nombre">
+                        </label>
+                        <span id="spanerror">Error al enviar</span>
+                        <span>Recuerda debes llevar tus propias bebidas</span>
+                        <input type="submit" value="Enviar">
+                    </form>
+                </div>
+            </div>
+        
+            <div class="modalform" id="modalok">
+                <div class="modal-background" onclick="cerrarmodalok()"></div> <!-- Fondo separado -->
+                <div class="form">
+                    <div class="contenedor" >
+                        <h2>Datos enviados</h2>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="inicio">
+                    <img src="img/flores3.png" alt="" class="flortop1">
+                    <img src="img/flores6.webp" class="flortop3" alt="">
+                    <img src="img/flores3.png" alt="" class="flortop2">
+                    <img src="img/flores.png" class="flortop4" alt="">
+                    <div class="texto1">
+                        Estás
+                         
+                    </div>
+                    <div class="texto2">
+                        Invitado
+                        <hr>
+                    </div>
+                    
+                </div>
+                
+                <div class="statics1">
+                    <div class="rosas">
+                        <img src="img/flores.png" alt="" class="flor1">
+                        <img src="img/flores6.webp" alt="" class="flor3">
+                        <img src="img/flores.png" alt="" class="flor4">
+                    </div>
+                    <div class="texto3">
+                        <p>Este 16 de noviembre</p>
+                        <p>celebro mi cumpleaños</p>
+                        <h1>"30"</h1>
+                    </div>
+            
+                    
+                    <img src="img/flores3.png" alt="" class="flor2">
+                </div>
+            </div>
+        
+            <div class="lugar">
+                <img src="img/tela3.png" alt="" class="tela1">
+                <div class="content1">
+                    <div class="cont1">
+                        <div>
+                            <p>Te esperamos</p>
+                            <p>pasadas las 12 de la noche en</p>
+                            <p class="nombrelugar">Complejo</p>
+                            <p class="nombrelugar">Caja UNSE</p>
+                            <p>¡El unico requisito es</p>
+                            <p>venir de <a href="https://www.google.com/search?sca_esv=d6d0ae44b4ca9a27&q=total+black&udm=2&fbs=AEQNm0CbCVgAZ5mWEJDg6aoPVcBgWizR0-0aFOH11Sb5tlNhd7Qv31WAq-g3XdD7m281OKyew6CGJrEYYQ4lESOC_x5KfKIM33pw4V0jbd2zwyvJC04lNi6vw677Qme4-u7PsrI5BXj86Mz2Is7nuDX6KKCrLO2nGfvz3MxKgaGgCo3SNSOkufgK_Q2l_YmUy3dsknXG-PUrG3AUxHYaKL6lLhDyJ2T8Lg&sa=X&ved=2ahUKEwj66Lvy-vuIAxWYq5UCHUrqAwEQtKgLegQIFhAB&biw=2133&bih=1070&dpr=0.9" target="_blank">TOTAL BLACK</a>!</p>
+                        </div>
+                    </div>
+                    <div class="cont2">
+                        <img src="img/lugar2.jpeg" class="img1" alt="">
+                        <img src="img/lugar.jpeg" class="img2" alt="">
+                        <img src="img/flores5.png" alt="" class="florlugar">
+                    </div>
+                </div>
+        
+                <div class="pielugar">
+                    <img src="img/flores3.png" alt="" class="florpie2">
+                    <div class="ubi">
+                        <p>¿COMO LLEGO?</p>
+                        <a target="_blank" href="https://www.google.com/maps/place/Complejo+CAJA+UNSE/@-27.8929137,-64.2627231,15.15z/data=!4m6!3m5!1s0x943b4bab83a4ce71:0xabb251f078a9c0a5!8m2!3d-27.892204!4d-64.256186!16s%2Fg%2F11fb3ls17l?entry=ttu&g_ep=EgoyMDI0MTAwMi4xIKXMDSoASAFQAw%3D%3D">VER UBICACIÓN EN EL MAPA</a>
+                    </div>
+                </div>
+            </div>
+            <div class="sobre">
+                <img src="img/flores4.png" alt="" class="florpie1">
+                <div class="carta">
+                    <h1>¿Podras asistir?</h1>
+                    <img src="img/Carta.png" alt="" class="cartaimg">
+                    <img src="img/sello.png" alt="" class="selloimg" onclick="abrirmodal()">
+                </div>        
+            </div>
+            <div class="piefotos">
+                <img src="img/telas7.png" class="telasobre3" alt="">
+                <img src="img/telas8.png" class="telasobre4" alt="">
+                <img src="img/tela2.png" class="telasobre1" alt="">
+                <img src="img/tela5.png" class="telasobre2" alt="">
+                <img src="img/flores1.png" class="flortela1" alt="">
+                <img src="img/flores3.png" class="flortela2" alt="">
+                <div class="fotos1">
+                    <img src="img/foto3.png" alt="" class="img3">
+                    <img src="img/foto2.png" alt="" class="img2">
+                    <img src="img/flores4.png" class="florfotopie" alt="">
+                </div>
+                <div class="fotocenter">
+                    <p>
+                        <span style="padding-left: 0px;">¡Espero</span><br>
+                        <span style="padding-left: 10px;">que vivamos</span><br>
+                        <span style="padding-left: 20px;">muchas más</span><br>
+                        <span style="padding-left: 30px;">experiencias</span><br>
+                        <span style="padding-left: 40px;">juntos!</span>
+                    </p>
+                </div>
+                <div class="fotos2">
+                    <img src="img/foto4.png" alt="" class="img4">
+                    <img src="img/foto1.png" alt="" class="img1">
+                </div>
+            </div>
+            <div class="footer">
+                <hr>
+                <h2>Desarrollado por lunala</h2>
+            </div>
+        </div>
+        <div class="column">
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="invitacion.js"></script>    
+</body>
+</html>
