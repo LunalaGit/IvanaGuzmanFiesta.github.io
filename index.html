@@ -11,24 +11,21 @@
 </head>
 <body>
     <div class="contenedor-principal">
-
-        <div class="column">
+        <div class="modalform" id="modalinvitacion">
+            <div class="modal-background" onclick="cerrarmodal()"></div> <!-- Fondo separado -->
+            <div class="form">
+                <form class="contenedor" id="form">
+                    <h1>Confirmá tu asistencia</h1>
+                    <label for="nombre">
+                        Nombre y Apellido: <input type="text" name="nombre" id="nombre">
+                    </label>
+                    <span id="spanerror">Error al enviar</span>
+                    <span>Recuerda debes llevar tus propias bebidas</span>
+                    <input type="submit" value="Enviar">
+                </form>
+            </div>
         </div>
         <div class="centro">
-            <div class="modalform" id="modalinvitacion">
-                <div class="modal-background" onclick="cerrarmodal()"></div> <!-- Fondo separado -->
-                <div class="form">
-                    <form class="contenedor" id="form">
-                        <h1>Confirmá tu asistencia</h1>
-                        <label for="nombre">
-                            Nombre y Apellido: <input type="text" name="nombre" id="nombre">
-                        </label>
-                        <span id="spanerror">Error al enviar</span>
-                        <span>Recuerda debes llevar tus propias bebidas</span>
-                        <input type="submit" value="Enviar">
-                    </form>
-                </div>
-            </div>
         
             <div class="modalform" id="modalok">
                 <div class="modal-background" onclick="cerrarmodalok()"></div> <!-- Fondo separado -->
@@ -138,8 +135,6 @@
                 <hr>
                 <h2>Desarrollado por lunala</h2>
             </div>
-        </div>
-        <div class="column">
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
