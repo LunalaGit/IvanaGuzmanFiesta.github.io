@@ -2,6 +2,9 @@ document.addEventListener("DOMContentLoaded", function() {
     const form = document.getElementById("form");
     form.addEventListener("submit",function(event){
         event.preventDefault();
+        var button = document.getElementById("buttonform");
+        button.disabled = true;
+        
         const formData = new URLSearchParams();
         var nombre = document.getElementById("nombre").value;
         if(nombre || nombre!=""){
@@ -20,15 +23,18 @@ document.addEventListener("DOMContentLoaded", function() {
                 cerrarmodal();
                 abrirmodalok();
                 setTimeout(cerrarmodalok, 2000);
+                button.disabled = false;
     
             }).catch(error =>{
                 const span = document.getElementById("spanerror");
                 span.style.display="block";
+                button.disabled = false;
             });
         }
         else{
             abrirmodalerror();
             setTimeout(cerrarmodalerror, 1000);
+            button.disabled = false;
 
         }
     });
